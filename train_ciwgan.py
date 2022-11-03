@@ -202,7 +202,7 @@ def train(fps, args):
         z_cat = z[:, : args.num_categ]
         q_cat = q[:, : args.num_categ]
         lcat = tf.nn.sigmoid_cross_entropy_with_logits(labels=z_cat, logits=q_cat)
-        return tf.reduce_mean(lcat);
+        return tf.reduce_mean(lcat)
 
     
     G_loss = -tf.reduce_mean(D_G_z)
