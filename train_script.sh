@@ -29,4 +29,4 @@
 ## Command(s) to run (example):
 module load ml/tensorflow/1.12.0-py36
 nohup python3 backup.py '/global/scratch/users/nzxyin/mandarin_tone/results1' 60 &
-python3 ./train_ciwgan.py train '/global/scratch/users/nzxyin/mandarin_tone/results1/' --data_dir '/global/scratch/users/nzxyin/mandarin_tone/data/tone_perfect_wav_16' --data_slice_len 32768 --num_categ 5 --data_first_slice --data_pad_end --data_fast_wav
+python3 ./train_ciwgan.py train '/global/scratch/users/nzxyin/mandarin_tone/results1/' --data_dir '/global/scratch/users/nzxyin/mandarin_tone/data/tone_perfect_wav_16' --data_slice_len 32768 --num_categ 4 --data_first_slice --data_pad_end --data_fast_wav
